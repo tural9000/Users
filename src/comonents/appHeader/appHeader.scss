@@ -4,6 +4,7 @@
     &__header{
         display: flex;
         justify-content: space-between;
+        padding: 0 15px;
         // border: solid red;
     }
 
@@ -50,6 +51,7 @@
           .nav-link:hover, .active:hover {
             // background-color: #0E1333;
             color: #d86201e8;
+            border-bottom: 1.2px solid #d86201e8;
           }
           
           .active {

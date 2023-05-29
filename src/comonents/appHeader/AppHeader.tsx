@@ -26,7 +26,7 @@ const AppHeader = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/users"
               //  end
               className={({ isActive }) =>
                 ["nav-link", isActive ? "active" : null]

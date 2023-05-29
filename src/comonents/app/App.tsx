@@ -1,17 +1,28 @@
 import styles from "./app.module.scss";
-import Spinner from "../spinner/Spinner";
-import { useGetGoodsQuery } from "../../store/api/api";
-import { useState } from "react";
-import { useAddProductsMutation, useDeleteProductMutation } from "../../store/api/goods.api";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import AppHeader from './../appHeader/AppHeader';
+import MainPage from "../../pages/mainPage/MainPage";
 
 
 
 const App = () => {
   return (
-    <div className={styles.content}>
+    <Router>
+      <div className={styles.app}>
          <AppHeader/>
-    </div>
+         <div className={styles.content}>
+            <Routes>
+              <Route path='/' element={<MainPage/>}/>
+              {/* <Route path='/users' element={<UsersPage/>}/> */}
+              {/* <Route path="comics/:id" element={<SinglePage />}/> */}
+              {/* <Route path="characters/:id" element={<SinglePage //>}/> */}
+              {/* <Route path="comics/:comicId" element={<SingleComicLayout/>}/> */}
+              {/* <Route path="*" element={<Page404/>}/> */}
+            </Routes>
+         </div>
+      </div>
+    </Router>
+    
   );
 };
 
