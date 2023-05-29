@@ -1,0 +1,26 @@
+.app{
+    // height: 100vh;
+    // overflow-y: scroll;
+    // background: url('../../assets/hero_bg.jpg') center / cover no-repeat;
+    margin: auto 100px;
+}
+.content{
+    display: grid;
+    // grid-template-columns: 560px 440px;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding-top: 50px;
+    // border: solid red;
+}
+.d{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // align-content: flex-end;
+
+    input{
+        display: inline-block;
+    }
+}
