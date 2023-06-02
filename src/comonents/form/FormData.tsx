@@ -14,68 +14,27 @@ import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 
+
 const FormData = () => {
-  const [addUser, { isLoading }] = useAddUserMutation();
-  // const {} = useFormContext()
+  const {register, handleSubmit, formState: {errors}, control} = useFormContext()
 
-  const schema = yup.object().shape({
-    name: yup.string().required(),
-    lastName: yup.string().required(),
-    email: yup.string().email().required(),
-    age: yup.number().positive().integer().required(),
-    phone: yup.number().required()
-  })
 
-  const form = useForm<IField>({
-    resolver: yupResolver(schema),
-    defaultValues: {
-      name: "",
-      lastName: "",
-      email: "",
-      age: 0,
-      gender: "",
-      phone: "",
-      city: "",
-    },
-  });
-  
-  const { register, handleSubmit, formState: {errors}, control, watch } = form;
-
-  const onSubmit = (data: IField) => {
-    const newData = {
-      name: {
-        first: data.name,
-        last: data.lastName,
-      },
-      email: data.email,
-      age: data.age,
-      city: data.city,
-      phone: data.phone,
-      gender: data.gender,
-    };
-    setTimeout(() => {
-      addUser(newData);
-    }, 2000);
-    if (data) {
-    }
-  };
   return (
     <div className={styles.f}>
-      <form onSubmit={handleSubmit(onSubmit)} noValidate>
         <Stack spacing={2} width={400}>
           <TextField
             label="Name"
             type="text"
-            {...register("name")}
+            {...register("name", {required:true})}
             error={!!errors.name}
-            helperText={errors.name?.message}
+            // helperText={errors.name?.message}
           />
           <TextField
             label="LastName"
             type="text"
             {...register("lastName")}
             error={!!errors.lastName}
-            helperText={errors.lastName?.message}
+            // helperText={errors.lastName?.message}
           />
            <TextField
           label="Email"
@@ -89,7 +48,7 @@ const FormData = () => {
             },
           })}
           error={!!errors.email}
-          helperText={errors.email?.message}
+          // helperText={errors.email?.message}
          />
 
           <TextField
@@ -98,7 +57,7 @@ const FormData = () => {
             {...register("age")}
 
             error={!!errors.age}
-            helperText={errors.age?.message}
+            // helperText={errors.age?.message}
           />
            <FormControl fullWidth={false} sx={{ mb: 6 }}>
             <Controller
@@ -152,7 +111,6 @@ const FormData = () => {
             Save changes
           </Button>
         </div>
-      </form>
       <DevTool control={control} />
     </div>
   );
