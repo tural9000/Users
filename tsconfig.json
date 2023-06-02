@@ -16,6 +16,6 @@
       "noEmit": true,
       "jsx": "react-jsx"
     },
-    "include": ["src"],
+    "include": ["src", "../../../react ders/react ts code expl/react toolkit + rtk query/recipe RTK query/src/hooks/useActions.ts"],
     "references": [{ "path": "./tsconfig.node.json" }]
   }

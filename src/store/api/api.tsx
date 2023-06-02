@@ -1,22 +1,31 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { IGoods } from './../../types/goods.types';
+// import { IGoods } from './../../types/goods.types';
 const _api = ' http://localhost:3001/';
 
 export const api  = createApi({
     reducerPath: 'api',
-    tagTypes: ['Products'],
+    tagTypes: ['Users'],
     baseQuery: fetchBaseQuery({ baseUrl: _api}),
     endpoints: (build) => ({
-        getGoods: build.query<IGoods[], string>({
-            query: (limit: '') => `goods?${limit && `_limit=${limit}`}`,
-            providesTags: (result:any) => result
-              ? [
-                  ...result.map(({ id }:{id:number}) => ({ type: 'Products', id })),
-                  { type: 'Products', id: 'LIST' },
-                ]
-              : [{ type: 'Products', id: 'LIST' }],
+        getAllUsers: build.query<any, string>({
+            // query: (limit: '') => `api?${limit && `_limit=${limit}`}`,
+            query: () => `results`,
+            providesTags: ['Users']
+        }),
+        // get partial user
+        getUser: build.query<null, string | number>({
+            query: (id) => `results/${id}`
         })
+        // search user by name
+        // getUser: build.query<null, string>({
+        //     query: (user:string) => `results/search?q=user`
+        // })
+
+        // get by page number
+        // getAlbums: builder.query({
+        //     query: (page = 1) => `albums?_page=${page}&_limit=10`,
+        // }),
     })
 })
 
-export const {useGetGoodsQuery} = api
+export const {useGetAllUsersQuery, useGetUserQuery} = api;

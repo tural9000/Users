@@ -1,7 +1,7 @@
-
+import styles from './spinner.module.scss'
 const Spinner = () => {
     return (
-        <div className="spinner-border mt-5" role="status" >
+        <div className={styles.spiner} role="status" >
             <span className="visually-hidden">Loading...</span>
         </div>
     )

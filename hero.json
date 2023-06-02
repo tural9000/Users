@@ -1,0 +1,172 @@
+{
+    "results": [
+      {
+        "gender": "female",
+        "name": {
+          "title": "Ms",
+          "first": "Katie",
+          "last": "Reid"
+        },
+        "location": {
+          "street": {
+            "number": 2009,
+            "name": "King Street"
+          },
+          "city": "Bangor",
+          "state": "Lothian",
+          "country": "United Kingdom",
+          "postcode": "IN4L 0AW",
+          "coordinates": {
+            "latitude": "-6.2007",
+            "longitude": "153.3193"
+          },
+          "timezone": {
+            "offset": "-6:00",
+            "description": "Central Time (US & Canada), Mexico City"
+          }
+        },
+        "email": "katie.reid@example.com",
+        "login": {
+          "uuid": "8bf33409-bd82-4158-b1c8-bdeca5e48536",
+          "username": "orangepanda851",
+          "password": "rocky",
+          "salt": "2FhguFBg",
+          "md5": "93937903e37000fe30ab15aa2ce6a8dd",
+          "sha1": "79651a45806333b8802f06e1a92a619b57cd12a7",
+          "sha256": "71b3f215aaa9f2089ca7cd445cff45c7e062e9806c36fe9e53aae3e82f4cf8ef"
+        },
+        "dob": {
+          "date": "1994-07-02T11:14:48.899Z",
+          "age": 28
+        },
+        "registered": {
+          "date": "2018-07-14T09:36:32.479Z",
+          "age": 4
+        },
+        "phone": "013873 90293",
+        "cell": "07142 463690",
+        "id": {
+          "name": "NINO",
+          "value": "OM 45 88 98 N"
+        },
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/63.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/63.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/63.jpg"
+        },
+        "nat": "GB"
+      },
+      {
+        "gender": "female",
+        "name": {
+          "title": "Ms",
+          "first": "Leslie",
+          "last": "Leijenaar"
+        },
+        "location": {
+          "street": {
+            "number": 8722,
+            "name": "Earme Trije"
+          },
+          "city": "Hoenderloo",
+          "state": "Groningen",
+          "country": "Netherlands",
+          "postcode": "4208 ED",
+          "coordinates": {
+            "latitude": "31.1362",
+            "longitude": "56.3478"
+          },
+          "timezone": {
+            "offset": "-2:00",
+            "description": "Mid-Atlantic"
+          }
+        },
+        "email": "leslie.leijenaar@example.com",
+        "login": {
+          "uuid": "86b6d756-cda9-4e0d-8696-b40ec2664a97",
+          "username": "happypeacock346",
+          "password": "mimi",
+          "salt": "3NL6cZdy",
+          "md5": "cba9162da5ef8f9c100285e6fe9d898b",
+          "sha1": "d650fa13899db16b0c5de252c223fe9baa59fd8d",
+          "sha256": "772bf020e2bf868fa1f1c12ca72af5a5d44a7b002328a75b7a3cc85c62149ec3"
+        },
+        "dob": {
+          "date": "1947-02-28T15:18:32.960Z",
+          "age": 76
+        },
+        "registered": {
+          "date": "2020-11-22T22:49:21.255Z",
+          "age": 2
+        },
+        "phone": "(0214) 261577",
+        "cell": "(06) 35895157",
+        "id": {
+          "name": "BSN",
+          "value": "65407282"
+        },
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/75.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/75.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/75.jpg"
+        },
+        "nat": "NL"
+      },
+      {
+        "gender": "male",
+        "name": {
+          "title": "Mr",
+          "first": "Bobbie",
+          "last": "De Meer"
+        },
+        "location": {
+          "street": {
+            "number": 2243,
+            "name": "Bram Dolywaard"
+          },
+          "city": "Wognum",
+          "state": "Zuid-Holland",
+          "country": "Netherlands",
+          "postcode": "5616 GL",
+          "coordinates": {
+            "latitude": "31.2944",
+            "longitude": "-48.8679"
+          },
+          "timezone": {
+            "offset": "+11:00",
+            "description": "Magadan, Solomon Islands, New Caledonia"
+          }
+        },
+        "email": "bobbie.demeer@example.com",
+        "login": {
+          "uuid": "12f33ff4-33b0-418b-a4a9-ac1e62272410",
+          "username": "redmouse672",
+          "password": "django",
+          "salt": "onTbeGUk",
+          "md5": "c7d1a82bca1e6a48bcf081d6211db7ce",
+          "sha1": "ccd3ef0b90315723beae6f6432f2685436cfe645",
+          "sha256": "3cddaf564dc1d0cc509420300928b9af771e46f95d68c30e886459b8222969b5"
+        },
+        "dob": {
+          "date": "1987-06-21T09:08:24.451Z",
+          "age": 35
+        },
+        "registered": {
+          "date": "2004-09-24T06:33:51.450Z",
+          "age": 18
+        },
+        "phone": "(041) 1412000",
+        "cell": "(06) 67209016",
+        "id": {
+          "name": "BSN",
+          "value": "01403816"
+        },
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/89.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/89.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/89.jpg"
+        },
+        "nat": "NL"
+      }
+    ]
+  }

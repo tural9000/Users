@@ -39,7 +39,7 @@ const AppHeader = () => {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/blog"
               //  end
               className={({ isActive }) =>
                 ["nav-link", isActive ? "active" : null]

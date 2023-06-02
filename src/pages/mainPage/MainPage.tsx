@@ -1,3 +1,4 @@
+import { Form } from 'react-router-dom';
 import styles from './mainPage.module.scss';
 
 function MainPage() {
@@ -13,6 +14,7 @@ function MainPage() {
             <div className={styles.main__desc}>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorem debitis optio similique autem ducimus sapiente in sint qui, amet consequuntur modi minus? Inventore amet nisi velit aut tempora alias. amet consectetur adipisicing elit. Ex dolorem debitis optio similique autem ducimus sapiente in sint qui, amet consequuntur modi minus? Inventore amet nisi velit aut tempora alias. amet consectetur adipisicing elit. Ex dolorem debitis optio similique autem ducimus sapiente in sint qui, amet consequuntur modi minus? Inventore amet nisi velit aut tempora alias.</p>
             </div>
+            {/* <Form/> */}
         </div>
     </section>
   )

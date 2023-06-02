@@ -1,30 +1,67 @@
 {
-  "goods": [
+  "results": [
     {
-      "name": "tural",
-      "id": 6
-    }
-  ],
-  "recipes": [
-    {
-      "id": 1,
-      "name": "Apple Frangipan Tart",
-      "image": "https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg"
+      "gender": "male",
+      "name": {
+        "first": "Herbert",
+        "last": "Klar"
+      },
+      "city": "Bangor",
+      "email": "herbert.klar@example.com",
+      "age": 28,
+      "phone": "013873 90293",
+      "image": "https://randomuser.me/api/portraits/men/78.jpg",
+      "id": "1"
     },
     {
-      "id": 2,
-      "name": "Apple & Blackberry Crumble",
-      "image": "https://www.themealdb.com/images/media/meals/xvsurr1511719182.jpg"
+      "gender": "female",
+      "name": {
+        "first": "Kurt",
+        "last": "Brown"
+      },
+      "city": "Hoenderloo",
+      "email": "leslie.leijenaar@example.com",
+      "age": 34,
+      "phone": "233873 90783",
+      "image": "https://randomuser.me/api/portraits/men/9.jpg",
+      "id": "2"
     },
     {
-      "id": 3,
-      "name": "Apam balik",
-      "image": "https://www.themealdb.com/images/media/meals/adxcbq1619787919.jpg"
+      "gender": "female",
+      "name": {
+        "first": "Bobbie",
+        "last": "De Meer"
+      },
+      "city": "Wognum",
+      "email": "bobbie.demeer@example.com",
+      "age": 34,
+      "phone": "233873 90783",
+      "image": "https://randomuser.me/api/portraits/men/43.jpg",
+      "id": "3"
     },
     {
-      "id": 4,
-      "name": "Ayam Percik",
-      "image": "https://www.themealdb.com/images/media/meals/020z181619788503.jpg"
+      "name": {
+        "first": "tural",
+        "last": "Ismayil"
+      },
+      "email": "primo0991@gmail.com",
+      "age": "23",
+      "city": "sumqayit",
+      "phone": "(051) 995 70 11",
+      "gender": "",
+      "id": "BLANqTX"
+    },
+    {
+      "name": {
+        "first": "tural",
+        "last": "Ismayil"
+      },
+      "email": "tural.ismayil0981@gmail.com",
+      "age": "23",
+      "city": "sumqayit",
+      "phone": "+894 (98) 98 989 89",
+      "gender": "",
+      "id": "Nipkqzn"
     }
   ]
 }

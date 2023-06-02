@@ -3,7 +3,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
   }
   
   /* Track */
@@ -13,12 +13,12 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #96a596
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #d5dfa9
   }
 
 * {
@@ -44,21 +44,21 @@ body{
 form {
     padding: 0 10px;
 }
-button{
-    background-color: #e08594;
-    border: none;
-    outline: none;
-    padding: 8px;
-    border-radius: 5px;
-    margin-top: 5px;
-    cursor: pointer;
-    transition: background-color .4s ease-in-out;
+// button{
+//     background-color: #e08594;
+//     border: none;
+//     outline: none;
+//     padding: 8px;
+//     border-radius: 5px;
+//     margin-top: 5px;
+//     cursor: pointer;
+//     transition: background-color .4s ease-in-out;
 
-    &:hover{
-        background-color: #d67f8e;
-        color: antiquewhite;
-    }
-}
+//     &:hover{
+//         // background-color: #000000;
+//         color: #418896;
+//     }
+// }
 input{
     // border: 1px solid transparent;
     border: 1px solid;

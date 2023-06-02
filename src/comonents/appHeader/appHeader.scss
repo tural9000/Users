@@ -5,7 +5,14 @@
         display: flex;
         justify-content: space-between;
         padding: 0 15px;
-        // border: solid red;
+        border: solid #eeeeeee8;
+        position: fixed;
+        width: 100%;
+        // background-color: #252525;
+        // position: initial;
+        z-index: 10;
+        background-color: #fff
+        
     }
 
     &__title{
@@ -20,7 +27,7 @@
             display: flex;
             justify-content: space-between;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 19px;
             line-height: 32px;
             padding-top: 35px;
 
@@ -36,7 +43,7 @@
         .nav-link {
             text-decoration: none;
             background-color: white;
-            color: #0E1333;
+            color: rgba(105, 105, 105, 0.753);
             // font-family: 'Gilroy-ExtraBold';
             // font-size: 18px;
             // display: flex;
