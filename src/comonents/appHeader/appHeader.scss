@@ -1,70 +1,128 @@
-// @import '../../style/variables.scss';
 
-.app{
-    &__header{
-        display: flex;
-        justify-content: space-between;
-        padding: 0 15px;
-        border: solid #eeeeeee8;
-        position: fixed;
-        width: 100%;
-        // background-color: #252525;
-        // position: initial;
-        z-index: 10;
-        background-color: #fff
-        
-    }
-
-    &__title{
-        img{
-            width: 350;
-            height: 100px;
-        }
-    }
-    // nav
-    &__menu{
-        ul{
-            display: flex;
-            justify-content: space-between;
-            font-weight: 700;
-            font-size: 19px;
-            line-height: 32px;
-            padding-top: 35px;
-
-            li{
-                margin: 0 8px;
-                list-style: none;
-                padding-right: 1.5rem;
-                a:hover{
-                    color: blue;
-                }
-            }
-        }
-        .nav-link {
-            text-decoration: none;
-            background-color: white;
-            color: rgba(105, 105, 105, 0.753);
-            // font-family: 'Gilroy-ExtraBold';
-            // font-size: 18px;
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: center;
-            // align-items: center;
-            // height: 100%;
-            // padding-left: 25px;
-            // padding-right: 25px;
-          }
-          
-          .nav-link:hover, .active:hover {
-            // background-color: #0E1333;
-            color: #d86201e8;
-            border-bottom: 1.2px solid #d86201e8;
-          }
-          
-          .active {
-            color: #252525;
-            // border-bottom: solid 2.5px #0E1333;
-            // padding-bottom: 2.5rem;
-          }
-    }
+.css-xi606m{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    border: solid #eeeeeee8;         
+    position: fixed;
+    width: 100%;
+    position: initial;
+    z-index: 10;
+    background-color: #fff
 }
+.css-h4y409-MuiList-root{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 32px;
+    padding-top: 35px;
+    
+}
+.css-1nxmd3h-MuiListItem-root{
+    margin: 0 8px;
+    list-style: none;
+    padding-top: 2.5rem;
+        // a:hover{
+        //     color: blue;
+        // }
+}
+.css-tlelie-MuiListItemText-root span{
+    // border: solid red;
+    font-weight: 600;
+}
+.nav-link {
+    text-decoration: none;
+    background-color: white;
+    color: rgba(63, 63, 63, 0.842);
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    // padding-left: 25px;
+    // padding-right: 25px;
+}
+.nav-link:hover, .active:hover {
+    color: #d86201e8;
+    border-bottom: .5px solid #d86201e8;
+    }
+    
+    .active {
+    // color: #252525;
+    color: #d86201e8;
+    // border-bottom: .5px solid #d86201e8;
+    
+}
+// // @import '../../style/variables.scss';
+
+// .app{
+//     &__header{
+//         display: flex;
+//         justify-content: space-between;
+//         padding: 0 15px;
+//         border: solid #eeeeeee8;
+//         position: fixed;
+//         width: 100%;
+//         // background-color: #252525;
+//         // position: initial;
+//         z-index: 10;
+//         background-color: #fff
+        
+//     }
+
+//     &__title{
+//         img{
+//             width: 350;
+//             height: 100px;
+//         }
+//     }
+//     // nav
+//     &__menu{
+//         ul{
+//             display: flex;
+//             justify-content: space-between;
+//             font-weight: 700;
+//             font-size: 19px;
+//             line-height: 32px;
+//             padding-top: 35px;
+
+//             li{
+//                 margin: 0 8px;
+//                 list-style: none;
+//                 padding-right: 1.5rem;
+//                 a:hover{
+//                     color: blue;
+//                 }
+//             }
+//         }
+//         .nav-link {
+//             text-decoration: none;
+//             background-color: white;
+//             color: rgba(105, 105, 105, 0.753);
+//             // font-family: 'Gilroy-ExtraBold';
+//             // font-size: 18px;
+//             // display: flex;
+//             // flex-direction: row;
+//             // justify-content: center;
+//             // align-items: center;
+//             // height: 100%;
+//             // padding-left: 25px;
+//             // padding-right: 25px;
+//           }
+          
+//           .nav-link:hover, .active:hover {
+//             // background-color: #0E1333;
+//             color: #d86201e8;
+//             border-bottom: 1.2px solid #d86201e8;
+//           }
+          
+//           .active {
+//             color: #252525;
+//             // border-bottom: solid 2.5px #0E1333;
+//             // padding-bottom: 2.5rem;
+//           }
+//     }
+// }
