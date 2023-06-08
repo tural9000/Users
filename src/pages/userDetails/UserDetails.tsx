@@ -1,7 +1,7 @@
 import styles from "./UserDetails.module.scss";
 import { useGetUserQuery } from "../../store/api/api";
 import { useParams } from "react-router-dom";
-import Spinner from "../../comonents/spinner/Spinner";
+import Spinner from "../../components/spinner/Spinner";
 
 export type MyParams = {
     id: string;

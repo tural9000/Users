@@ -1,4 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { IUser } from '../../types/user.types';
 // import { IGoods } from './../../types/goods.types';
 const _api = ' http://localhost:3001/';
 
@@ -7,14 +8,15 @@ export const api  = createApi({
     tagTypes: ['Users'],
     baseQuery: fetchBaseQuery({ baseUrl: _api}),
     endpoints: (build) => ({
-        getAllUsers: build.query<any, string>({
+        getAllUsers: build.query<IUser[], void>({
             // query: (limit: '') => `api?${limit && `_limit=${limit}`}`,
             query: () => `results`,
             providesTags: ['Users']
         }),
         // get partial user
         getUser: build.query<null, string | number>({
-            query: (id) => `results/${id}`
+            query: (id) => `results/${id}`,
+            providesTags: ['Users']
         })
         // search user by name
         // getUser: build.query<null, string>({

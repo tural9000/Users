@@ -3,11 +3,9 @@ import { Theme } from "@mui/material/styles";
 import MuiFormControl from "@mui/material/FormControl";
 import styled from "@mui/material/styles/styled";
 import { TextField, TextFieldProps } from "@mui/material";
-import { FieldError, FieldValues, UseControllerProps } from "react-hook-form";
+import { FieldValues, UseControllerProps } from "react-hook-form";
 import { Controller } from "react-hook-form";
-import { addErrorIntoField } from "../../../utils/addErrorIntofield";
 import ErrorMessage from "../../errorMessage/ErrorMessage";
-import InputMask from "react-input-mask";
 
 type Props<T extends FieldValues> = Omit<TextFieldProps, "inputRef" | "name"> &
   UseControllerProps<T> & {
@@ -47,7 +45,6 @@ const TextFields = <T extends FieldValues>({
             {...props}
             {...field}
             // variant = "filled"
-            {...addErrorIntoField(errors[name])}
           />
         )}
       />

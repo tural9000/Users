@@ -1,9 +1,9 @@
 export interface IUser {
-    id?: number
+    id: number
     gender: string
     name: {
-        first: string
-        last: string
+        first: string,
+        last : string
     }
     email: string
     age: number
@@ -12,7 +12,15 @@ export interface IUser {
     image?: string
 }
 export interface IUserData extends Omit<IUser, 'id' | 'image'>{};
+export interface IUserUpdate extends Omit<IUser, 'gender' | 'image' | 'city' | 'phone'>{};
 
+export interface IUserEdit {
+    id: number
+    firstName: string | undefined | null
+    lastName: string | undefined | null
+    email: string
+    age: number
+}
 
 export interface IInitialUserState{
     users: IUser[]

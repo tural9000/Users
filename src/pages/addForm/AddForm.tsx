@@ -1,20 +1,21 @@
 import { Avatar, Box, Button, FormControl, FormControlLabel, FormLabel, InputAdornment, Radio, RadioGroup, Typography } from "@mui/material";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
-import TextFields from "../../comonents/form/textField/TextField";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import { phoneRegEx } from "../../utils/addErrorIntofield";
 import { useAddUserMutation } from "../../store/api/users.api";
 import "./index.scss";
-import TextFieldMask from "../../comonents/form/textField/TextFieldMask";
+import TextFieldMask from "../../components/form/textField/TextFieldMask";
+import { IField } from "../../components/form/form.interface";
+import TextFields from '../../components/form/textField/TextField';
 
 
 const schema = yup.object({
   firstName: yup.string().required('firstName is required'),
   lastName: yup.string().required('LastName is required'),
   email: yup.string().required('Email is required').email(),
-  age: yup.number().positive().integer().max(150).required('Age is required'),
+  age: yup.number().positive().integer().required(),
   phone: yup.string().required('Mobile is required')
 })
 
@@ -44,6 +45,7 @@ const AddForm = ({handleSave}: {handleSave: any}) => {
   })
 
   const onSubmit = (data: IField) => {
+    console.log('rest', data)
     const newData = {
       name: {
         first: data.firstName,
@@ -80,7 +82,7 @@ const AddForm = ({handleSave}: {handleSave: any}) => {
            <TextFields control={control} name="lastName" errors={errors} label="Lastname" />
            <TextFields control={control} name="email" errors={errors} label="Email" />
            <TextFields control={control} name="age" errors={errors} label="Age" /> 
-           <TextFieldMask  control={control} name="phone" errors={errors} label="Mobile Phone"/>
+           <TextFieldMask  control={control} name="phone" errors={errors} label="Phone Number"/>
            <TextFields control={control} name="city" errors={errors} label="City" />
         <FormControl>
             <FormLabel id="demo-row-radio-buttons-group-label">

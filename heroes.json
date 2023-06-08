@@ -1,43 +1,43 @@
 {
   "results": [
     {
+      "id": "1",
       "gender": "male",
-      "name": {
-        "first": "Herbert",
-        "last": "Klar"
-      },
-      "city": "Bangor",
-      "email": "herbert.klar@example.com",
-      "age": 28,
-      "phone": "013873 90293",
-      "image": "https://randomuser.me/api/portraits/men/78.jpg",
-      "id": "1"
-    },
-    {
-      "gender": "female",
-      "name": {
-        "first": "Kurt",
-        "last": "Brown"
-      },
-      "city": "Hoenderloo",
-      "email": "leslie.leijenaar@example.com",
-      "age": 34,
-      "phone": "233873 90783",
-      "image": "https://randomuser.me/api/portraits/men/9.jpg",
-      "id": "2"
-    },
-    {
-      "gender": "female",
-      "name": {
-        "first": "Bobbie",
-        "last": "De Meer"
-      },
-      "city": "Wognum",
       "email": "bobbie.demeer@example.com",
-      "age": 34,
-      "phone": "233873 90783",
-      "image": "https://randomuser.me/api/portraits/men/43.jpg",
-      "id": "3"
+      "name": {
+        "first": "Bram",
+        "last": "Dolywaard"
+      },
+      "age": "32",
+      "city": "Wognum",
+      "phone": "(0214) 261577",
+      "image": "https://randomuser.me/api/portraits/women/63.jpg"
+    },
+    {
+      "id": "2",
+      "gender": "male",
+      "email": "bobbie.demeer@example.com",
+      "name": {
+        "first": "Katie",
+        "last": "Reid"
+      },
+      "age": "32",
+      "city": "Bangor",
+      "phone": "23244545454",
+      "image": "https://randomuser.me/api/portraits/women/63.jpg"
+    },
+    {
+      "id": "3",
+      "gender": "male",
+      "email": "bobbie.demeer@example.com",
+      "name": {
+        "first": "Katie",
+        "last": "Reid"
+      },
+      "age": "32",
+      "city": "Bangor",
+      "phone": "23244545454",
+      "image": "https://randomuser.me/api/portraits/women/63.jpg"
     }
   ]
 }
